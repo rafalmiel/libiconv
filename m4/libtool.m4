@@ -2651,6 +2651,17 @@ m4_if([$1], [],[
   shlibpath_var=PATH
   ;;
 
+cykusz*)
+  version_type=linux # correct to gnu/linux during the next big refactor
+  need_lib_prefix=no
+  need_version=no
+  library_names_spec='$libname$release$shared_ext$versuffix $libname$release$shared_ext$major $libname$shared_ext'
+  soname_spec='$libname$release$shared_ext$major'
+  shlibpath_var=LD_LIBRARY_PATH
+  shlibpath_overrides_runpath=no
+  hardcode_into_libs=yes
+  ;;
+
 darwin* | rhapsody*)
   dynamic_linker="$host_os dyld"
   version_type=darwin
@@ -3502,6 +3513,10 @@ cegcc*)
   # use the weaker test based on 'objdump'. See mingw*.
   lt_cv_deplibs_check_method='file_magic file format pe-arm-.*little(.*architecture: arm)?'
   lt_cv_file_magic_cmd='$OBJDUMP -f'
+  ;;
+
+cykusz*)
+  lt_cv_deplibs_check_method=pass_all
   ;;
 
 darwin* | rhapsody*)
