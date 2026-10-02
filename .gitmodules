@@ -1,3 +1,4 @@
 [subcheckout "gnulib"]
-	url = git://git.savannah.gnu.org/gnulib.git
+	url = https://github.com/rafalmiel/gnulib.git
+	branch = cykusz
 	path = gnulib
